@@ -15,9 +15,18 @@ class Vertex:
         self.label = label
         self.edges = set()
 
+    def __repr__(self):
+        return str(self.label)
+
 
 class Graph:
     """The graph itself is simply a set of vertices."""
     # pylint: disable=too-few-public-methods
     def __init__(self):
         self.vertices = set()
+
+    def add_edge(self, start, end):
+        start.edges.add(end)
+
+    def add_vertex(self, vertex):
+        self.vertex.add(vertex)
