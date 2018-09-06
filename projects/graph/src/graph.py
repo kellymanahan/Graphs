@@ -1,13 +1,13 @@
 """
 Simple graph implementation compatible with BokehGraph class.
 """
-class Vertex:
-    def __init__(self, label):
-        self.label = label
-        self.edges = set()
+# class Vertex:
+#     def __init__(self, label):
+#         self.label = label
+#         self.edges = set()
 
-    def __repr__(self):
-        return 'Vertex' + self.label
+#     def __repr__(self):
+#         return 'Vertex' + self.label
 class Graph:
     """Represent a graph as a dictionary of vertices mapping labels to edges."""
     def __init__(self):
@@ -27,7 +27,4 @@ class Graph:
             return True
 
 
-    def bfs(graph, start):
-        nodes = []
-        
     
