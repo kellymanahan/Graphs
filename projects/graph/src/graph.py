@@ -24,6 +24,7 @@ class Graph:
             return False
         else:
             self.vertices[start].add(end)
+            self.vertices[end].add(start)
             return True
 
 
